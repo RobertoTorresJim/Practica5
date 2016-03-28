@@ -109,7 +109,8 @@ main (int argc, char *argv [])
       put_mark (argv [2], i, 0); // marca el i-esimo bloque de la imagen 
                                  // contenida en el archivo 'argv [2]'
 
-      picbin[i] = 0x00;
+	put_pixel(picbin, 0x00);
+  //    picbin[i] = 0x00;
   }
   put_mark (argv [2], i, LASTMARK); // indica que el la imagen marcada debe
                                     // ser escrita en un archivo llamado
